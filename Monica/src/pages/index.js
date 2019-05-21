@@ -71,8 +71,7 @@ import fiftyone from '../images/51.jpg'
 import fiftytwo from '../images/52.jpg'
 import InfiniteScroll from 'react-infinite-scroller'
 import Block1 from '../components/block1'
-import Masonry from 'masonry-layout'
-import masonry from 'masonry-layout'
+
 
 
 const IndexPage = () => (
