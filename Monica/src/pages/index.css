@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Varta";
+    src: url("../images/varta\ light.ttf");
+    }
+.reg{
+    word-spacing: 3px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3;
+    font-family: Oswald !important;
+    font-weight: 100px !important;
+}
+#logo{
+    width: 20vw;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000000
+}
+#gal{
+    position: relative;
+    bottom: 45px;
+}
+.head{
+    text-align: center;
+    font-family: OSWALD;
+    font-weight: 100;
+}
+.links{
+    word-spacing: 50px;
+    position: fixed;
+    top: 0;
+    left: 60%;
+}
+#map{
+    padding: 5%;
+    padding-top: 10%;
+}
+.con{
+
+width: 1200px;
+margin: 0 auto;
+columns: 4;
+column-gap: 0px;
+}
+.con .box {
+    width: 100%;
+    margin: 0;
+
+    overflow: hidden;
+    break-inside: avoid;
+}
+.con .box img{
+    max-width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+@media (max-width: 1200px){
+    .con{
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+        }
+}
+
+@media (max-width: 768px){
+    .con{
+        columns: 2;
+        }
+}
+@media (max-width: 480px){
+    .con{
+        columns: 1;
+        }
+}
+.container{
+    display: grid;
+    grid-template-rows: 14.2vh 14.2vh 14.2vh  14.2vh 14.2vh  14.2vh 14.2vh;
+    grid-template-columns: 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW 8.33VW;
+}
+.header{
+    grid-row: 1;
+    grid-column: 1/13;
+}
+.heading{
+    grid-row: 2;
+    grid-column: 1/13;
+    text-align: center;
+}
+h1{
+    margin: 0;
+    font-weight: 200;
+}
+.text{
+    grid-row: 3/7;
+    grid-column: 1/5;
+    padding-left: 3.8vw;
+
+}
+.pic{
+    grid-row: 3/7;
+    grid-column:5/13;
+    background-image: url('../images/Monica.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #DAE6F4;
+    margin-right: 8.33vw;
+}
+#logo{
+    width: 20vw !important;
+}
+
+.form{
+    grid-column: 1/6;
+    grid-row: 3/8;
+    padding-left: 16.6vw;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 550;
+
+}
+.map{
+    grid-column:6/13;
+    grid-row: 3/8;
+}
+#map{
+    width: 400px;
+    height: 317px;
+    background: #C4C4C4;
+    margin-left: 8.33vw;
+}
+
+input {
+    width: 390px;
+    background-color: #C4C4C4;
+    border: none;
+
+}
+button{
+    border-radius: 22px;
+    border: solid #000 1px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 7px !important;
+    background-color: #F3F3F3;
+}
+textarea{
+    width: 390px !important;
+    background-color: #C4C4C4;
+    border: none;
+    height: 162px;
+}
+
+#gap{
+    height: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .form{
+        grid-row: 3/7;
+        grid-column:1/13;
+        position: relative;
+        right: 40px;
+
+
+    }
+    .map{
+        grid-row: 7/12;
+        grid-column: 1/13;
+        position: relative;
+        right: 15px;
+        top: 35px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .text{
+        grid-row: 7/12;
+        grid-column: 1/13;
+        padding-left: 3.8vw;
+        padding-right: 3.8vw;
+        padding-top: 3.8vw;
+
+    }
+    .pic{
+        grid-row: 3/7;
+        grid-column:1/13;
+        background-image: url('../images/Monica.jpg');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #DAE6F4;
+        margin-right: 8.33vw;
+        margin-left: 8.33vw;
+
+    }
+
+
+
+}
